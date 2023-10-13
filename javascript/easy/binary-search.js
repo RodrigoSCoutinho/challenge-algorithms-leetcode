@@ -64,7 +64,6 @@ var search = function(nums, target) {
 
 //Quarta maneira APENAS em arrays ordenados
 
-
 var search = function(nums, target) {
     let left = 0;
     let right = nums.length - 1;
