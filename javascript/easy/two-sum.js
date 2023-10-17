@@ -50,4 +50,21 @@ var twoSum = function(nums, target) {
   };
 
 //RUNTIME 48MS
- 
+
+
+//*OTHER SOLUTION
+
+
+var twoSum = function(nums, target) {
+     const map = new Map();
+  
+     for(let i = 1; i < nums.length; i++) {
+        if(map.has(nums[i])) {
+          return [map.get(nums[i]), i] 
+        }
+        else{
+          const b = target - nums[i];
+          return map.set(b, i)
+        }
+     }
+  }
